@@ -89,11 +89,9 @@ const getAllBooksHandler = (request, h) => {
   }
 
   if (name !== undefined) {
-    const filteredBooksName = books.filter((book) => {
-      const nameRegex = new RegExp(name, "gi");
-      return nameRegex.test(book.name.toLowerCase().includes(name.toLowerCase()));
-    });
     
+    const filteredBooksName = books.filter((book) => book.name.toLowerCase().includes(name.toLowerCase()));
+
     const response = h
       .response({
         status: "success",
@@ -102,7 +100,6 @@ const getAllBooksHandler = (request, h) => {
             id: book.id,
             name: book.name,
             publisher: book.publisher,
-            reading: book.reading,
           })),
         },
       })
