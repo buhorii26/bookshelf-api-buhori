@@ -1,17 +1,15 @@
 {
-    "env": {
-        "commonjs": true,
-        "es2021": true,
-        "node": true
-    },
-    "extends": "airbnb-base",
-    "parserOptions": {
-        "ecmaVersion": "latest"
-    },
-    "rules": {
-        "no-console": "off"
-    },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "overrides": [],
+  "rules": {
+    "no-console": "off"
+  }
 }
